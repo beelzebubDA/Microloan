@@ -1,0 +1,89 @@
+.ourproducts {
+    position: relative;
+    background: linear-gradient(70deg, #545DDE 6.64%, #6883E5 95.22%);
+
+    &_block {
+        padding: 70px 0 18px 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    &_title {
+        color: #FFF;
+    }
+
+    &_items {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 45px;
+    }
+
+    &_item {
+        border-radius: 10px;
+        background: linear-gradient(70deg, #FFF 6.64%, #F2F6FF 95.22%);
+        box-shadow: 5px 4px 20px 0px rgba(56, 49, 88, 0.40);
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_item--top {
+        padding: 20px 23px 16px 23px;
+    }
+
+    &_item--name {
+        color: #545DDE;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &_item--info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 21px 13px 23px;
+        background: linear-gradient(70deg, #545DDE 6.64%, #6883E5 95.22%);
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &_item--info-perc {}
+
+    &_item--info-money {}
+
+    &_item--info-days {}
+
+    &_item--action {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 12px 0 10px 0;
+    }
+
+    &_item--action-btn {
+        display: inline-block;
+        padding: 17px 31px;
+    }
+
+    &_item--action-img {
+        width: 80px;
+        height: 80px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .sectionBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../imgs/scndBg.png), rgb(41 0 255 / 75%) -15.795px -85.601px / 320.147% 148.499% no-repeat;
+        background-size: cover;
+    }
+}

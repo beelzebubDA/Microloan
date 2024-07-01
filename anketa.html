@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Анкета</title>
+</head>
+<body>
+
+    <div id="preloader"></div>
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="container"></div>
+        </header>
+
+        <main class="main">
+            <section class="anketa">
+                <div class="container">
+                    <div class="anketa_block">
+                        <h2 class="anketa_title title">Заявка на заём</h2>
+
+                        <form class="anketa_form" action="" method="">
+                            <div class="anketa_actions">
+                                <label class="anketa_action">
+                                    <input type="text" class="input input_name" name="FIO" placeholder="ФИО" required >
+                                    <img class="anketa_action--icon" src="./assets/imgs/anketa/anketaIcon01.png" alt="anketa icon">
+                                </label>
+                                <label class="anketa_action">
+                                    <input type="text" class="input input_mail" name="email" placeholder="e-mail" required >
+                                    <img class="anketa_action--icon" src="./assets/imgs/anketa/anketaIcon02.png" alt="anketa icon">
+                                </label>
+                                <label class="anketa_action">
+                                    <input type="text" class="input input_tel" name="tel" placeholder="мобильный телефон" required >
+                                    <img class="anketa_action--icon" src="./assets/imgs/anketa/anketaIcon03.png" alt="anketa icon">
+                                </label>
+
+                                <button class="anketa_btn btn openModal">Подать заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="sectionBg"></div>
+
+                <div class="offers_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="container"></div>
+        </footer>
+
+        <div class="modal">
+            <div class="modal_block">
+                <h2 class="modal_title">Спасибо!</h2>
+                <span class="modal_span">Ваша заявка принята!</span>
+                <a href="index.html" class="modal_btn btn">Хорошо</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jquery.inputmask.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

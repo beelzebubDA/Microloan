@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Кредитный калькулятор</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="container"></div>
+        </header>
+
+        <main class="main">
+            <section class="hero calculator_hero">
+                <div class="container">
+                    <div class="hero_block">
+                        <h2 class="hero_title title">Кредитный калькулятор</h2>
+                        <div class="hero_calc--items">
+                            <div class="hero_calc--item">
+                                <div class="hero_calc--item-top">
+                                    <span class="hero_calc--item-name">Сумма займа</span>
+                                    <span class="hero_calc--item-change"><span>0</span> ₽</span>
+                                </div>
+                                <div class="hero_calc--item-main">
+                                    <input type="range" name="sum" class="input-range inputSum" min="5000" max="100000" step="1" value="5000">
+                                </div>
+                                <div class="hero_calc--item-bot">
+                                    <span class="hero_calc--item-span">5 000</span>
+                                    <span class="hero_calc--item-span">100 000</span>
+                                </div>
+                            </div>
+                            <div class="hero_calc--item">
+                                <div class="hero_calc--item-top">
+                                    <span class="hero_calc--item-name">Ставка</span>
+                                    <span class="hero_calc--item-change"><span>0</span> %</span>
+                                </div>
+                                <div class="hero_calc--item-main">
+                                    <input type="range" name="bet" class="input-range inputBet" min="1" max="100" step="1" value="1">
+                                </div>
+                                <div class="hero_calc--item-bot">
+                                    <span class="hero_calc--item-span">1</span>
+                                    <span class="hero_calc--item-span">100</span>
+                                </div>
+                            </div>
+                            <div class="hero_calc--item">
+                                <div class="hero_calc--item-top">
+                                    <span class="hero_calc--item-name">Срок</span>
+                                    <span class="hero_calc--item-change"><span>0</span> дней</span>
+                                </div>
+                                <div class="hero_calc--item-main">
+                                    <input type="range" name="limitation" class="input-range inputLimitation" min="1" max="100" step="1" value="1">
+                                </div>
+                                <div class="hero_calc--item-bot">
+                                    <span class="hero_calc--item-span">1</span>
+                                    <span class="hero_calc--item-span">100</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offers">
+                <div class="offers_container">
+                    <div class="offers_block">
+                        <div class="offers_items">
+                            <div class="offers_item">
+                                <span class="offers_item--span">Ежемесячный платеж</span>
+                                <span class="offers_item--info everyMonthsPrice"><span>0</span> ₽</span>
+                            </div>
+                            <div class="offers_item">
+                                <span class="offers_item--span">Переплата</span>
+                                <span class="offers_item--info overPayment
+                                "><span>0</span> ₽</span>
+                            </div>
+                            <div class="offers_item">
+                                <span class="offers_item--span">Общая выплата</span>
+                                <span class="offers_item--info totalPayments
+                                "><span>0</span> ₽</span>
+                            </div>
+                        </div>
+                        <div class="offers_bg"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="footer">
+            <div class="container"></div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/calculator.js"></script>
+</body>
+</html>

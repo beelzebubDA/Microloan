@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url(../fonts/Inter-Regular.woff2)
+}
+
+@font-face {
+    font-family: Inter;
+    font-weight: 600;
+    src: url(../fonts/Inter-SemiBold.woff2)
+}
+
+@font-face {
+    font-family: Inter;
+    font-weight: 700;
+    src: url(../fonts/Inter-Bold.woff2)
+}
+
+@font-face {
+    font-family: Bebas;
+    font-weight: 700;
+    src: url(../fonts/bebas_neue_bold.woff2)
+}
+
+h1,
+h2,
+h3,
+span,
+ul,
+ol,
+a,
+li,
+p,
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    background: #F2F6FF;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+}
+
+.container {
+    max-width: 426px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.title {
+    color: #292B42;
+    font-size: 20px;
+}
+
+.btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 9px 12px 10px 12px;
+    border-radius: 10px;
+    background: linear-gradient(70deg, #84DD4E 6.64%, #65BB3D 95.22%);
+    box-shadow: 5px 4px 20px 0px rgba(56, 49, 88, 0.30);
+}
+
+.preloader {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+
+    &_block {
+        position: relative;
+        z-index: 1;
+        padding-top: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .logo_bg {
+            width: 233px;
+            height: 233px;
+            object-fit: cover;
+            position: relative;
+            left: auto;
+            right: auto;
+        }
+
+        .preloader_logo {
+            position: relative;
+
+            .preloader_text {
+                position: absolute;
+                z-index: 2;
+                top: 30%;
+                left: 10%;
+                .preloader_text--title {
+                    color: #545DDE;
+                    text-align: center;
+                    font-family: Bebas;
+                    font-size: 39.535px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                .preloader_text--side {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .preloader_text--item {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        padding-top: 10px;
+
+                        img {
+                            width: 26px;
+                            height: 26px;
+                            object-fit: contain;
+                            border-radius: 2.829px;
+                            background: linear-gradient(70deg, #545DDE 6.64%, #6883E5 95.22%);                      
+                        }
+
+                        .preloader_text--span {
+                            color: #545DDE;
+                            font-family: Inter;
+                            font-size: 9.429px;
+                            font-weight: 700;
+                        }
+
+                        &.item2 {
+                            img {
+                                background: none;
+                            }
+
+                            .preloader_text--span {
+                                color: #F54B49;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &_span {
+        display: block;
+        padding-top: 15px;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}

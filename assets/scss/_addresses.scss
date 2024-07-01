@@ -1,0 +1,87 @@
+.addresses {
+    position: relative;
+
+    .sectionBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../imgs/anketa/anketaBg.png), rgb(41 0 255 / 75%) -15.795px -85.601px / 320.147% 148.499%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    &_block {
+        position: relative;
+        z-index: 2;
+        padding: 72px 0 210px 0;
+    }
+
+    &_title {
+        color: #fff;
+    }
+
+    &_items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    &_item {
+        border-radius: 10px;
+        background: linear-gradient(70deg, #FFF 6.64%, #F2F6FF 95.22%);
+        box-shadow: 5px 4px 20px 0px rgba(56, 49, 88, 0.40);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 25px 0 22px;
+
+        &.active {
+            .addresses_item--title {
+                img {
+                    rotate: 180deg;
+                }
+            }
+            .addresses_item--bottom {
+                display: flex;
+            }
+        }
+    }
+
+    &_item--title {
+        display: flex;
+        color: #545DDE;
+        font-size: 14px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        width: 100%;
+        padding: 20px 0 20px 0;
+    }
+
+    &_item--bottom {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        border-top: 1px solid #E7EDF9;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0 25px 0;
+    }
+
+    &_item--bottom-span {
+        color: #93969B;
+        font-size: 13.299px;
+        font-weight: 400;
+        text-align: start !important;
+        width: 100%;
+    }
+
+    &_btn {
+        margin-top: 10px;
+        width: 150px;
+        padding: 17px 0;
+    }
+}
